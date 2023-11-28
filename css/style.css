@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+@font-face {
+  font-family: "Norse Bold";
+  src: url("../assets/font/Norse-Bold.otf");
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+}
+
+.left-column {
+  background-image: url(../assets/img/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  flex: 3;
+}
+.left-column .logo {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Norse Bold";
+  font-size: 5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  padding: 1rem;
+}
+.left-column .logo img {
+  height: 130px;
+}
+.left-column .credit {
+  margin-bottom: 1rem;
+}
+.left-column a {
+  color: #fff;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  justify-content: center;
+}
+.right-column .text {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  margin: 0 7rem 2rem 3rem;
+}
+
+form {
+  box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem 7rem 2rem 3rem;
+}
+form h3 {
+  margin-bottom: 1rem;
+}
+form input {
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.4rem;
+  border-color: #eee;
+}
+form input:focus {
+  outline-color: blue;
+}
+
+.inputs > div {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5rem;
+  margin-bottom: 1rem;
+}
+
+.inputs label {
+  display: block;
+  margin-bottom: 1px;
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+
+#password,
+#confirm-password {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+button {
+  color: #fff;
+  background-color: #596d48;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  border: 1px solid #596d48;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+  margin: 2rem 0 2.4rem 3rem;
+  font-size: 1.2rem;
+}
+button:hover {
+  opacity: 90%;
+}
+
+#login-link {
+  color: #596d48;
+  text-decoration: none;
+}
